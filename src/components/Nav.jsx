@@ -2,6 +2,8 @@ import { NavLink } from "react-router-dom";
 
 import classes from "./Nav.module.css";
 
+import { Box } from "@chakra-ui/react";
+
 function Nav() {
   return (
     <header className={classes.header}>
@@ -26,6 +28,16 @@ function Nav() {
               }
             >
               Projects
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/testing"
+              className={({ isActive }) =>
+                isActive ? classes.active : undefined
+              }
+            >
+              Testing
             </NavLink>
           </li>
         </ul>

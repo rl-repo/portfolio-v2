@@ -1,5 +1,19 @@
 .content {
   margin: 2rem auto;
   text-align: left;
-  background-color: red;
+  color: white;
 }
+
+/* .row {
+  display: flex;
+}
+
+.col1 {
+  flex: 30%;
+  padding: 10px;
+}
+
+.col2 {
+  flex: 70%;
+  padding: 10px;
+} */

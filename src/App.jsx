@@ -11,6 +11,7 @@ import HomePage from "./pages/Home";
 import ProjectsPage from "./pages/ProjectsPage.jsx";
 import RootLayout from "./pages/Root";
 import ErrorPage from "./pages/Error";
+import TestingPage from "./pages/TestingPage";
 
 const router = createBrowserRouter([
   {
@@ -18,8 +19,9 @@ const router = createBrowserRouter([
     element: <RootLayout />,
     errorElement: <ErrorPage />,
     children: [
-      { path: "/", element: <HomePage /> },
-      { path: "/projects", element: <ProjectsPage /> },
+      { index: true, element: <HomePage /> },
+      { path: "projects", element: <ProjectsPage /> },
+      { path: "testing", element: <TestingPage /> },
     ],
   },
 ]);
