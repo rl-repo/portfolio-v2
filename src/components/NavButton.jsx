@@ -10,9 +10,19 @@ import c from "../pages/TestingPage.module.css";
 // }
 
 function NavButton(props) {
+  function handleClick() {
+    console.log(`hi from ${props.text}`);
+    let e = document.getElementById(props.sectionId);
+    e.scrollIntoView({
+      block: "start",
+      behavior: "smooth",
+      inline: "start",
+    });
+  }
+
   return (
     <div className={c.sti_container}>
-      <button className={c.btn}>
+      <button className={c.btn} onClick={handleClick}>
         <span className={c["btn-icon"]}>
           <i>{props.icon}</i>
         </span>

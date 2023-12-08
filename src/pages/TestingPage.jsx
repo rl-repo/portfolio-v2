@@ -24,10 +24,13 @@ function TestingPage() {
       <p> sad</p> */}
 
       <Flex direction="column" justify="space-around" gap="10px">
-        <NavButton icon="😊" text="Education" />
-        <NavButton icon="😊" text="Experience" />
-        <NavButton icon="😊" text="Skills" />
-        <NavButton icon="😊" text="Projects" />
+        <Box>
+          <NavButton icon="😊" text="Education" />
+          <NavButton icon="😊" text="Experience" />
+          <NavButton icon="😊" text="Skills" />
+          <NavButton icon="😊" text="Projects" />
+        </Box>
+        <Text color="tomato">Hi</Text>
       </Flex>
     </Container>
   );

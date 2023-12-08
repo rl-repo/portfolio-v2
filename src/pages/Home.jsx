@@ -4,39 +4,37 @@ import Experience from "../components/Experience.jsx";
 import Skills from "../components/Skills.jsx";
 import Projects from "../components/Projects.jsx";
 
-import ava from "../assets/img/pfp.png";
-
-import {
-  Container,
-  Box,
-  Divider,
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  Flex,
-  Spacer,
-} from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 
 function HomePage() {
   return (
     <div>
-      {/* <img src={ava} alt="Ava" /> */}
-      <Divider />
       <Box bg="lightblue" rounded="md" w="100%" p={4} color="black" m={2}>
         <About />
       </Box>
+
       <Box bg="lightblue" rounded="md" w="100%" p={4} color="black" m={2}>
-        <Education />
+        <section id="eduSection">
+          <Education />
+        </section>
       </Box>
+
       <Box bg="lightblue" rounded="md" w="100%" p={4} color="black" m={2}>
-        <Experience />
+        <section id="expSection">
+          <Experience />
+        </section>
       </Box>
+
       <Box bg="lightblue" rounded="md" w="100%" p={4} color="black" m={2}>
-        <Skills />
+        <section id="skillsSection">
+          <Skills />
+        </section>
       </Box>
+
       <Box bg="lightblue" rounded="md" w="100%" p={4} color="black" m={2}>
-        <Projects />
+        <section id="projectsSection">
+          <Projects />
+        </section>
       </Box>
     </div>
   );

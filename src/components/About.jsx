@@ -1,14 +1,20 @@
+import { Link, Text } from "@chakra-ui/react";
+
 function About() {
   return (
     <div>
-      <h1>About</h1>
-      <p>Hi!</p>
-      <p>I'm Richard Luu - a data analyst and aspiring web developer.</p>
+      <Text as="b" fontSize="2xl">
+        About
+      </Text>
+      <p>Hi, I'm Richard Luu - a data analyst and aspiring web developer!</p>
       <p>
         An alum from Virginia Tech's{" "}
-        <a href="https://data.science.vt.edu/programs/cmda.html">
+        <Link
+          color="teal.500"
+          href="https://data.science.vt.edu/programs/cmda.html"
+        >
           Computational Modeling & Data Analytics
-        </a>{" "}
+        </Link>{" "}
         (CMDA) program with interests in data science and web development.
       </p>
     </div>

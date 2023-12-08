@@ -1,0 +1,43 @@
+.gradient-text {
+  /* font-family: "Acherus Grotesque", sans-serif;
+   */
+  /* font-family: "Crimson Text", sans-serif; */
+  background: linear-gradient(
+    to top right,
+    rgb(134, 31, 65),
+    rgb(186, 84, 118),
+    /* rgb(255, 255, 255), */ rgb(237, 166, 111),
+    rgb(229, 117, 31)
+  );
+  background-size: 250% 250%;
+  animation: rainbow 2s ease-in-out infinite;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: rgba(0, 0, 0, 1);
+  /* font-size: 18px; */
+  /* width: 80vw; */
+  /* margin: 30vh auto; */
+  margin-left: 0;
+  /* display: inline; */
+  /* text-align: center; */
+  transition: color 0.2s ease-in-out;
+  /* text-transform: uppercase; */
+  /* font-weight: 900; */
+}
+.gradient-text:hover {
+  color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+@keyframes rainbow {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+
+/* https://codepen.io/Bristle4049/pen/wvNXYKm */
