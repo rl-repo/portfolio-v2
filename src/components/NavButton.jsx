@@ -11,7 +11,6 @@ import c from "../pages/TestingPage.module.css";
 
 function NavButton(props) {
   function handleClick() {
-    console.log(`hi from ${props.text}`);
     let e = document.getElementById(props.sectionId);
     e.scrollIntoView({
       block: "start",

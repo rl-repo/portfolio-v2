@@ -31,10 +31,16 @@ function TempCard(props) {
           // translateY: "-5px",
           // transitionDuration: "0.2s",
           // transitionTimingFunction: "ease-in-out",
-          borderColor: "#0070f3",
+          // borderColor: "#0070f3",
+          // backgroundColor: "rgb(36, 36, 36, 0.8)",
+          boxShadow: "0 0 10px #a8d4f7",
+          borderColor: "#a8d4f7",
         }}
         overflow="hidden"
         position="relative"
+        // bgColor="rgb(111, 175, 227, 0.35)"
+        bgColor="rgb(36, 36, 36, 0.35)"
+        color="white"
       >
         {/* <Image
           src="https://bit.ly/dan-abramov"
@@ -50,18 +56,19 @@ function TempCard(props) {
         /> */}
         <CardHeader>
           <Flex justifyContent="space-between">
-            <Link href={props.link}>
+            <Link as={NavLink} to={props.link}>
               <Heading size="md">{props.title}</Heading>
             </Link>
-            <NavLink
+            <Link
+              as={NavLink}
               to={props.link}
               _hover={{
                 transform: "translateY(-5px)",
-                color: "blue",
+                color: "#62cdbb",
               }}
             >
               <FontAwesomeIcon icon={faUpRightFromSquare} />
-            </NavLink>
+            </Link>
           </Flex>
         </CardHeader>
 
@@ -72,7 +79,13 @@ function TempCard(props) {
         <CardFooter>
           <HStack spacing={1}>
             {props.skillTags.map((i) => (
-              <Tag size="md" variant="outline" colorScheme="blue" key={i}>
+              <Tag
+                color="white"
+                size="md"
+                variant="outline"
+                borderColor="white"
+                key={i}
+              >
                 {i}
               </Tag>
             ))}

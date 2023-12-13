@@ -6,11 +6,13 @@ function About() {
       <Text as="b" fontSize="2xl">
         About
       </Text>
-      <p>Hi, I'm Richard Luu - a data analyst and aspiring web developer!</p>
+      <Text>
+        Hi, I'm Richard Luu - a data analyst and aspiring web developer!
+      </Text>
       <p>
         An alum from Virginia Tech's{" "}
         <Link
-          color="teal.500"
+          color="#62cdbb"
           href="https://data.science.vt.edu/programs/cmda.html"
         >
           Computational Modeling & Data Analytics

@@ -6,13 +6,13 @@
   position: relative;
   display: inline-block;
   padding: 5px 10px 5px 10px;
-  background-color: lightblue;
+  background-color: white;
   cursor: pointer;
   outline: none;
   border: 0;
   vertical-align: middle;
   text-decoration: none;
-  color: #fff;
+  color: #5581ad;
   border-radius: 25px;
   /* -webkit-transition: width 0.5s; */
   /* transition: width 10s; */
@@ -35,7 +35,7 @@
 
 .btn:hover .btn-text {
   max-width: 300px;
-  color: white;
+  color: #5581ad;
 }
 
 /* --- */

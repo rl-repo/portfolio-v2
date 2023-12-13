@@ -13,7 +13,7 @@
   animation: rainbow 2s ease-in-out infinite;
   background-clip: text;
   -webkit-background-clip: text;
-  color: rgba(0, 0, 0, 1);
+  color: white;
   /* font-size: 18px; */
   /* width: 80vw; */
   /* margin: 30vh auto; */

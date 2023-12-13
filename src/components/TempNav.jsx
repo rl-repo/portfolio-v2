@@ -37,7 +37,7 @@ function BasicUsage() {
     <>
       {/* <Button onClick={onOpen}>Open Modal</Button> */}
       {/* <Text onClick={tempClickTest}>asds</Text> */}
-      <Text onClick={onOpen} className={classes["gradient-text"]}>
+      <Text as="i" onClick={onOpen} className={classes["gradient-text"]}>
         Virginia Polytechnic Institute & State University (Virginia Tech)
       </Text>
       <Modal isOpen={isOpen} onClose={onClose} size="lg">
@@ -94,8 +94,7 @@ function BasicUsage() {
                 <TabPanel>
                   <UnorderedList>
                     <ListItem>4214 - Methods of Regression Analysis</ListItem>
-                    <ListItem>4204 - Statistical Design</ListItem>
-                    <ListItem>Experimental Design</ListItem>
+                    <ListItem>4204 - Experimental Design</ListItem>
                   </UnorderedList>
                 </TabPanel>
               </TabPanels>

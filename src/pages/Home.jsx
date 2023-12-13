@@ -9,29 +9,64 @@ import { Box } from "@chakra-ui/react";
 function HomePage() {
   return (
     <div>
-      <Box bg="lightblue" rounded="md" w="100%" p={4} color="black" m={2}>
+      <Box
+        bg="rgb(111, 175, 227, 0.35)"
+        rounded="md"
+        w="100%"
+        p={4}
+        color="white"
+        m={2}
+      >
         <About />
       </Box>
 
-      <Box bg="lightblue" rounded="md" w="100%" p={4} color="black" m={2}>
+      <Box
+        bg="rgb(111, 175, 227, 0.35)"
+        rounded="md"
+        w="100%"
+        p={4}
+        color="white"
+        m={2}
+      >
         <section id="eduSection">
           <Education />
         </section>
       </Box>
 
-      <Box bg="lightblue" rounded="md" w="100%" p={4} color="black" m={2}>
+      <Box
+        bg="rgb(111, 175, 227, 0.35)"
+        rounded="md"
+        w="100%"
+        p={4}
+        color="white"
+        m={2}
+      >
         <section id="expSection">
           <Experience />
         </section>
       </Box>
 
-      <Box bg="lightblue" rounded="md" w="100%" p={4} color="black" m={2}>
+      <Box
+        bg="rgb(111, 175, 227, 0.35)"
+        rounded="md"
+        w="100%"
+        p={4}
+        color="white"
+        m={2}
+      >
         <section id="skillsSection">
           <Skills />
         </section>
       </Box>
 
-      <Box bg="lightblue" rounded="md" w="100%" p={4} color="black" m={2}>
+      <Box
+        bg="rgb(111, 175, 227, 0.35)"
+        rounded="md"
+        w="100%"
+        p={4}
+        color="white"
+        m={2}
+      >
         <section id="projectsSection">
           <Projects />
         </section>

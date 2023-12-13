@@ -30,12 +30,13 @@ function Experience() {
         </Flex>
         <UnorderedList spacing="1">
           <ListItem>
-            Lead data analysis section of research on health levels across
-            Virginia counties with regression analysis
+            A collaborative case study with the client's business intellgeince
+            team and peers researching the relationship between social
+            determinants of health and health risk
           </ListItem>
           <ListItem>
-            Collaborated with a team from a client's business intelligence team
-            on health analysis problems
+            Lead data analysis section of research on health levels across
+            Virginia counties with regression analysis
           </ListItem>
           <ListItem>
             Organized meeting schedules and task delegation for team of peers
@@ -46,12 +47,18 @@ function Experience() {
             R
           </ListItem>
           <ListItem>
-            Developed and created Tableau dashboard with Bootstrap webpage
+            Developed and created Tableau dashboard with Bootstrap{" "}
+            <Link
+              color="teal.500"
+              href="https://richpluu.github.io/VA_SDOH/index.html"
+            >
+              webpage{" "}
+            </Link>
             displaying collected data
           </ListItem>
           <ListItem>
             Compiled, cleaned, extracted, transformed, and loaded data from a
-            variety of sources
+            variety of public and federal sources
           </ListItem>
         </UnorderedList>
         <Flex justifyContent="center" p="10px">
@@ -95,12 +102,11 @@ function Experience() {
             with team using R
           </ListItem>
           <ListItem>
-            Reported on probit regression, classification and regression trees
+            Reported on probit regression, classification, and regression trees
             to explain and employ concept to peers{" "}
           </ListItem>
 
           <ListItem>
-            {" "}
             Wrote logic and database knowledge for Java projects: towers of
             hanoi, and a GUI based music database
           </ListItem>
