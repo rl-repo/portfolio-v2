@@ -1,42 +1,28 @@
-import { Button, useDisclosure, Text } from "@chakra-ui/react";
-
 import {
+  useDisclosure,
+  Text,
   Modal,
   ModalOverlay,
   ModalContent,
   ModalHeader,
-  ModalFooter,
   ModalBody,
   ModalCloseButton,
-} from "@chakra-ui/react";
-
-import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
-import {
-  List,
+  Tabs,
+  TabList,
+  TabPanels,
+  Tab,
+  TabPanel,
   ListItem,
-  ListIcon,
-  OrderedList,
   UnorderedList,
 } from "@chakra-ui/react";
 
 import classes from "./TempNav.module.css";
 
-function BasicUsage() {
+function ClassesModal() {
   const { isOpen, onOpen, onClose } = useDisclosure();
-
-  // function tempClickTest() {
-  //   return console.log("click test");
-  // }
-
-  const handleClick = (e) => {
-    e.preventDefault();
-    console.log("The link was clicked.");
-  };
 
   return (
     <>
-      {/* <Button onClick={onOpen}>Open Modal</Button> */}
-      {/* <Text onClick={tempClickTest}>asds</Text> */}
       <Text as="i" onClick={onOpen} className={classes["gradient-text"]}>
         Virginia Polytechnic Institute & State University (Virginia Tech)
       </Text>
@@ -93,23 +79,17 @@ function BasicUsage() {
                 </TabPanel>
                 <TabPanel>
                   <UnorderedList>
-                    <ListItem>4214 - Methods of Regression Analysis</ListItem>
                     <ListItem>4204 - Experimental Design</ListItem>
+
+                    <ListItem>4214 - Methods of Regression Analysis</ListItem>
                   </UnorderedList>
                 </TabPanel>
               </TabPanels>
             </Tabs>
           </ModalBody>
-
-          {/* <ModalFooter>
-            <Button colorScheme="blue" mr={3} onClick={onClose}>
-              Close
-            </Button>
-            <Button variant="ghost">Secondary Action</Button>
-          </ModalFooter> */}
         </ModalContent>
       </Modal>
     </>
   );
 }
-export default BasicUsage;
+export default ClassesModal;

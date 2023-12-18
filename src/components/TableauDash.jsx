@@ -14,7 +14,6 @@ import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { NavLink } from "react-router-dom";
 
 import DashModal from "./DashModal.jsx";
-import DashDrawer from "./DashDrawer.jsx";
 
 function TableauDash() {
   return (
@@ -77,16 +76,16 @@ function TableauDash() {
       />
       <Flex>
         <Text mr="10px">Dashboard 3</Text>
-        <Link
-          // as={NavLink}
-          to="http://google.com/"
+        {/* <Link
+          as={NavLink}
+          to="https://public.tableau.com/views/VGDash/VGDash?:language=en-US&:embed_code_version=3&:embed=y&:loadOrderID=0&:display_count=y&:origin=viz_share_link"
           _hover={{
             transform: "translateY(-5px)",
-            color: "blue",
+            color: "#62cdbb",
           }}
         >
           <FontAwesomeIcon icon={faUpRightFromSquare} />
-        </Link>
+        </Link> */}
       </Flex>
       <Text>
         The third Tableau dashboard on Video Game sales data, with various

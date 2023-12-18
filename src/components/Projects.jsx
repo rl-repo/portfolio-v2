@@ -31,9 +31,11 @@ function Projects() {
         <TempCard
           title="Web Development"
           body=" Various web sites and applications I have created. Including: Simple banking application, workout tracker, and recipe viewer."
+          link="/web-development"
           skillTags={["HTML", "CSS", "JavaScript", "React"]}
         />
         <TempCard
+          link="/sql"
           title="SQL Sample(s)"
           body="Example queries done on an Instagram-like data set."
           skillTags={["SQL", "MySQL"]}

@@ -11,7 +11,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 
-import { NavLink } from "react-router-dom";
+import { NavLink, ScrollRestoration } from "react-router-dom";
 
 import RDashboards from "../components/RDashboard.jsx";
 import TableauDash from "../components/TableauDash.jsx";
@@ -42,6 +42,7 @@ function ProjectsPage() {
           4
         </Box>
       </Flex> */}
+      <ScrollRestoration />
     </div>
   );
 }

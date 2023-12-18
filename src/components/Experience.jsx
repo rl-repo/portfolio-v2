@@ -68,11 +68,16 @@ function Experience() {
               src="src/assets/img/SDOH.png"
               alt="SDOH Homepage"
               borderRadius="1%"
+              transition="transform 0.5s"
               _hover={{
-                shadow: "md",
-                transform: "scale(1.01)",
-                transitionDuration: "0.2s",
+                cursor: "pointer",
+                // transform: "translateY(-1px)",
+                transform: "scale(1.02)",
+                // translateY: "-1px",
+                // transitionDuration: "2s",
                 transitionTimingFunction: "ease-in-out",
+                boxShadow: "0 0 10px #a8d4f7",
+                borderColor: "#a8d4f7",
               }}
             />
           </Link>

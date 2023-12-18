@@ -11,12 +11,11 @@ function About() {
       </Text>
       <p>
         An alum from Virginia Tech's{" "}
-        <Link
-          color="#62cdbb"
-          href="https://data.science.vt.edu/programs/cmda.html"
-        >
-          Computational Modeling & Data Analytics
-        </Link>{" "}
+        <Text color="#62cdbb" as="u">
+          <Link href="https://data.science.vt.edu/programs/cmda.html">
+            Computational Modeling & Data Analytics
+          </Link>
+        </Text>
         (CMDA) program with interests in data science and web development.
       </p>
     </div>

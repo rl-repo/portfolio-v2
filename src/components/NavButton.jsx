@@ -1,14 +1,5 @@
 import c from "../pages/TestingPage.module.css";
 
-// function NavButton(props) {
-//   return (
-//     <a href="#" className={c.button}>
-//       <span className={c.icon}>{props.icon}</span>
-//       <span className={c.text}>{props.text}</span>
-//     </a>
-//   );
-// }
-
 function NavButton(props) {
   function handleClick() {
     let e = document.getElementById(props.sectionId);

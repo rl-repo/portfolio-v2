@@ -11,7 +11,9 @@ import HomePage from "./pages/Home";
 import ProjectsPage from "./pages/ProjectsPage.jsx";
 import RootLayout from "./pages/Root";
 import ErrorPage from "./pages/Error";
-import TestingPage from "./pages/TestingPage";
+// import TestingPage from "./pages/TestingPage";
+import WebDevPage from "./pages/WebDevPage.jsx";
+import SQLPage from "./pages/SQLPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -21,7 +23,8 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <HomePage /> },
       { path: "projects", element: <ProjectsPage /> },
-      { path: "testing", element: <TestingPage /> },
+      { path: "web-development", element: <WebDevPage /> },
+      { path: "sql", element: <SQLPage /> },
     ],
   },
 ]);
@@ -36,7 +39,11 @@ const router = createBrowserRouter([
 // const router = createBrowserRouter(routeDefinitions);
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <>
+      <RouterProvider router={router} />
+    </>
+  );
 }
 
 export default App;

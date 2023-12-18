@@ -6,6 +6,8 @@ import Projects from "../components/Projects.jsx";
 
 import { Box } from "@chakra-ui/react";
 
+import { ScrollRestoration } from "react-router-dom";
+
 function HomePage() {
   return (
     <div>
@@ -71,6 +73,7 @@ function HomePage() {
           <Projects />
         </section>
       </Box>
+      <ScrollRestoration />
     </div>
   );
 }

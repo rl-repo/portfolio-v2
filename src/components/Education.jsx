@@ -1,5 +1,5 @@
 import { Text, Flex, Box } from "@chakra-ui/react";
-import TempNav from "./TempNav.jsx";
+import ClassesModal from "./ClassesModal.jsx";
 
 function Education() {
   return (
@@ -9,7 +9,7 @@ function Education() {
       </Text>
       <Flex justifyContent="space-between">
         <Box>
-          <TempNav />
+          <ClassesModal />
 
           <Text>B.S. CMDA | Minor: Mathematics</Text>
         </Box>
