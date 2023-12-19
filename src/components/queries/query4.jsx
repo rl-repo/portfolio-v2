@@ -1,6 +1,16 @@
-import PrismCode from "../PrismCode.jsx";
+import HighlightJS from "../HighlightJS.jsx";
 
-import { Table, Thead, Tbody, Tr, Th, Td, Box, Card } from "@chakra-ui/react";
+import {
+  Table,
+  Thead,
+  Tbody,
+  Tr,
+  Th,
+  Td,
+  Box,
+  Card,
+  Text,
+} from "@chakra-ui/react";
 
 const sqlCode = `SELECT
   image_url,
@@ -25,9 +35,10 @@ const data = [
 
 function Query4() {
   return (
-    <Box>
+    <Box pb="5px">
+      <Text fontSize="2xl">Query 4</Text>
       Pictures/posts with the most likes.
-      <PrismCode code={sqlCode} lang="sql" />
+      <HighlightJS code={sqlCode} lang="sql" />
       <Card p="5px" m="5px" boxShadow="md" rounded="md">
         <Table variant="simple" size="sm" algin="center">
           <Thead>

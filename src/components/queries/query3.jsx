@@ -1,6 +1,16 @@
-import PrismCode from "../PrismCode.jsx";
+import HighlightJS from "../HighlightJS.jsx";
 
-import { Table, Thead, Tbody, Tr, Th, Td, Box, Card } from "@chakra-ui/react";
+import {
+  Table,
+  Thead,
+  Tbody,
+  Tr,
+  Th,
+  Td,
+  Box,
+  Card,
+  Text,
+} from "@chakra-ui/react";
 
 const sqlCode = `SELECT 
   username,
@@ -41,10 +51,11 @@ const data = [
 
 function Query3() {
   return (
-    <Box>
-      - Find inactive users, defined by zero pictures posted. Alternatively,
-      query where photo.id is null.
-      <PrismCode code={sqlCode} lang="sql" />
+    <Box pb="5px">
+      <Text fontSize="2xl">Query 3</Text>
+      Find inactive users, defined by zero pictures posted. Alternatively, query
+      where photo.id is null.
+      <HighlightJS code={sqlCode} lang="sql" />
       <Card p="5px" m="5px" boxShadow="md" rounded="md">
         <Table variant="simple" size="sm" algin="center">
           <Thead>

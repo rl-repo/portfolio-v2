@@ -9,12 +9,13 @@ import { useEffect } from "react";
 
 hljs.registerLanguage("sql", sql);
 hljs.registerLanguage("markdown", markdown);
-hljs.highlightAll();
+// hljs.highlightAll();
 
-function PrismCode(props, lang) {
+function HighlightJS(props, lang) {
   useEffect(() => {
-    hljs.initHighlightingOnLoad();
-  }, []);
+    // hljs.initHighlightingOnLoad();
+    hljs.highlightAll();
+  });
 
   return (
     <Box m="5px" boxShadow="2xl">
@@ -25,4 +26,4 @@ function PrismCode(props, lang) {
   );
 }
 
-export default PrismCode;
+export default HighlightJS;

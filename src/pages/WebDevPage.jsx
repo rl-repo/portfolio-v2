@@ -15,6 +15,8 @@ import { FaGithub } from "react-icons/fa";
 
 import { NavLink, ScrollRestoration } from "react-router-dom";
 
+import ImageHover from "../components/ImageHover";
+
 function WebDevPage() {
   return (
     <div>
@@ -44,24 +46,14 @@ function WebDevPage() {
           />
         </video>
 
-        <Link href="https://rl-repo.github.io/bankist-page/">
-          <Image
-            borderRadius="1%"
-            m="5px"
-            transition="transform 0.5s"
+        <Box m="5px">
+          <ImageHover
+            link="https://rl-repo.github.io/bankist-page/"
+            width="auto"
             src="src/assets/img/WebDev/Bankist_App.png"
-            _hover={{
-              cursor: "pointer",
-              // transform: "translateY(-1px)",
-              transform: "scale(1.02)",
-              // translateY: "-1px",
-              // transitionDuration: "2s",
-              transitionTimingFunction: "ease-in-out",
-              boxShadow: "0 0 10px #a8d4f7",
-              borderColor: "#a8d4f7",
-            }}
+            alt="Bankist Homescreen"
           />
-        </Link>
+        </Box>
 
         <Box>
           <Flex>
@@ -134,7 +126,7 @@ function WebDevPage() {
         <Divider />
 
         <Box>
-          <Link href="https://rl-repo.github.io/bankist-page/">
+          <Link href="https://rl-repo.github.io/mapty/">
             <Image
               borderRadius="1%"
               m="5px"

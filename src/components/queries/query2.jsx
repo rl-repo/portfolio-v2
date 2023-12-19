@@ -1,6 +1,16 @@
-import PrismCode from "../PrismCode.jsx";
+import HighlightJS from "../HighlightJS.jsx";
 
-import { Table, Thead, Tbody, Tr, Th, Td, Box, Card } from "@chakra-ui/react";
+import {
+  Table,
+  Thead,
+  Tbody,
+  Tr,
+  Th,
+  Td,
+  Box,
+  Card,
+  Text,
+} from "@chakra-ui/react";
 
 const sqlCode = `SELECT 
   DATE_FORMAT(DATE(created_at), '%W') AS day_of_week,
@@ -21,10 +31,11 @@ const data = [
 
 function Query2() {
   return (
-    <Box>
-      - Determining which day of the week is most popular. Can also extract day
-      of week in name with DAYNAME(created_at) instead.
-      <PrismCode code={sqlCode} lang="sql" />
+    <Box pb="5px">
+      <Text fontSize="2xl">Query 2</Text>
+      Determining which day of the week is most popular. Can also extract day of
+      week in name with DAYNAME(created_at) instead.
+      <HighlightJS code={sqlCode} lang="sql" />
       <Card p="5px" m="5px" boxShadow="md" rounded="md">
         <Table variant="simple" size="sm" algin="center">
           <Thead>

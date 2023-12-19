@@ -1,4 +1,4 @@
-import PrismCode from "../PrismCode.jsx";
+import HighlightJS from "../HighlightJS.jsx";
 
 import {
   Table,
@@ -70,6 +70,7 @@ const data2 = [
 function Query7() {
   return (
     <Box>
+      <Text fontSize="2xl">Query 7</Text>
       <Text>
         Since social media is riddled with bots, this query finds which users
         are bots that likes all user posts. There are two approaches shown
@@ -80,7 +81,7 @@ function Query7() {
         amonut of pictures - assumed bots like ALL pictures
       </Text>
       <Text>2 Comparing likes without creating a new flag/column</Text>
-      <PrismCode code={sqlCode1} lang="sql" />
+      <HighlightJS code={sqlCode1} lang="sql" />
       <Card p="5px" m="5px" boxShadow="md" rounded="md">
         <Table variant="simple" size="sm" algin="center">
           <Thead>
@@ -101,7 +102,7 @@ function Query7() {
           </Tbody>
         </Table>
       </Card>
-      <PrismCode code={sqlCode2} lang="sql" />
+      <HighlightJS code={sqlCode2} lang="sql" />
       <Card p="5px" m="5px" boxShadow="md" rounded="md">
         <Table variant="simple" size="sm" algin="center">
           <Thead>

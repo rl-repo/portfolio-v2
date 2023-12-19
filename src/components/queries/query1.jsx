@@ -1,6 +1,4 @@
-import PrismCode from "../PrismCode.jsx";
-import Markdown from "react-markdown";
-import remarkGfm from "remark-gfm";
+import HighlightJS from "../HighlightJS.jsx";
 
 import {
   Table,
@@ -26,15 +24,7 @@ FROM users
 ORDER BY created_at
 LIMIT 5;`;
 
-const mdTable = `
-| username         | created_at          | age           |
-|------------------|---------------------|---------------|
-| Darby_Herzog     | 2016-05-06 00:14:21 | 2492 days old |
-| Emilio_Bernier52 | 2016-05-06 13:04:30 | 2492 days old |
-| Elenor88         | 2016-05-08 01:30:41 | 2490 days old |
-| Nicole71         | 2016-05-09 17:30:22 | 2488 days old |
-| Jordyn.Jacobson2 &nbsp;| 2016-05-14 07:56:26 &nbsp;| 2484 days old |
-`;
+//
 
 const data = [
   { username: "Darby_Herzog", created: "2016-05-06 00:14:21", age: 2492 },
@@ -46,9 +36,10 @@ const data = [
 
 export default function Query1() {
   return (
-    <Box>
-      - Getting five oldest users.
-      <PrismCode code={sqlCode1} lang="sql" />
+    <Box pb="5px">
+      <Text fontSize="2xl">Query 1</Text>
+      Getting five oldest users.
+      <HighlightJS code={sqlCode1} lang="sql" />
       {/* <Box align="center">
         <Markdown remarkPlugins={[remarkGfm]}>{mdTable}</Markdown>
       </Box> */}
@@ -75,3 +66,13 @@ export default function Query1() {
     </Box>
   );
 }
+
+// const mdTable = `
+// // | username         | created_at          | age           |
+// // |------------------|---------------------|---------------|
+// // | Darby_Herzog     | 2016-05-06 00:14:21 | 2492 days old |
+// // | Emilio_Bernier52 | 2016-05-06 13:04:30 | 2492 days old |
+// // | Elenor88         | 2016-05-08 01:30:41 | 2490 days old |
+// // | Nicole71         | 2016-05-09 17:30:22 | 2488 days old |
+// // | Jordyn.Jacobson2 &nbsp;| 2016-05-14 07:56:26 &nbsp;| 2484 days old |
+// // `;

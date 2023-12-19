@@ -19,7 +19,7 @@ function HomePage() {
   return (
     <div>
       {comps.map((comp) => (
-        <Box bg="tealBG" rounded="md" w="100%" p={4} m={2}>
+        <Box key={comp.id} bg="tealBG" rounded="md" w="100%" p={4} m={2}>
           <section id={comp.id}>{comp.comp}</section>
         </Box>
       ))}

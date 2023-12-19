@@ -14,9 +14,24 @@ import {
   TabPanel,
   ListItem,
   UnorderedList,
+  Tooltip,
 } from "@chakra-ui/react";
 
 import classes from "./TempNav.module.css";
+
+import { courses } from "../../content/data/courses";
+
+const modalTabs = courses.map((item, i) => <Tab key={i}>{item.major}</Tab>);
+
+const tabCourses = courses.map((item, j) => (
+  <TabPanel key={item.major}>
+    <UnorderedList key={item.major}>
+      {item.courseList.map((item2) => (
+        <ListItem key={item2}>{item2}</ListItem>
+      ))}
+    </UnorderedList>
+  </TabPanel>
+));
 
 function ClassesModal() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -24,7 +39,9 @@ function ClassesModal() {
   return (
     <>
       <Text as="i" onClick={onOpen} className={classes["gradient-text"]}>
-        Virginia Polytechnic Institute & State University (Virginia Tech)
+        <Tooltip label="Click me!" placement="top">
+          Virginia Polytechnic Institute & State University (Virginia Tech)
+        </Tooltip>
       </Text>
       <Modal isOpen={isOpen} onClose={onClose} size="lg">
         <ModalOverlay />
@@ -33,58 +50,8 @@ function ClassesModal() {
           <ModalCloseButton />
           <ModalBody>
             <Tabs>
-              <TabList>
-                <Tab>CMDA</Tab>
-                <Tab>Computer Science</Tab>
-                <Tab>Mathematics</Tab>
-                <Tab>Statistics</Tab>
-              </TabList>
-
-              <TabPanels>
-                <TabPanel>
-                  <UnorderedList>
-                    <ListItem>
-                      2005/2006 - Integrated Quantitative Sciences
-                    </ListItem>
-                    <ListItem>
-                      {" "}
-                      3605/3606 - Math Modeling: Methods & Tools
-                    </ListItem>
-                    <ListItem>
-                      3634 - Computer Science Foundations for CMDA
-                    </ListItem>
-                    <ListItem>
-                      3654 - Intro Data Analytics & Visualizations
-                    </ListItem>
-                    <ListItem>
-                      4654 - Inetermediate Data Analyltics & Machine Learning
-                    </ListItem>
-                    <ListItem>4864 - CMDA Capstone</ListItem>
-                  </UnorderedList>
-                </TabPanel>
-                <TabPanel>
-                  <UnorderedList>
-                    <ListItem>
-                      2114 - Software Design & Data Structures
-                    </ListItem>
-                    <ListItem>2505 - Computer Organization</ListItem>
-                  </UnorderedList>
-                </TabPanel>
-                <TabPanel>
-                  <UnorderedList>
-                    <ListItem>2534 - Discrete Mathematics</ListItem>
-                    <ListItem>3134 - Applied Combinatorics</ListItem>
-                    <ListItem>4175 - Cryptography</ListItem>
-                  </UnorderedList>
-                </TabPanel>
-                <TabPanel>
-                  <UnorderedList>
-                    <ListItem>4204 - Experimental Design</ListItem>
-
-                    <ListItem>4214 - Methods of Regression Analysis</ListItem>
-                  </UnorderedList>
-                </TabPanel>
-              </TabPanels>
+              <TabList>{modalTabs}</TabList>
+              <TabPanels>{tabCourses}</TabPanels>
             </Tabs>
           </ModalBody>
         </ModalContent>

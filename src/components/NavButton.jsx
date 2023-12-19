@@ -1,4 +1,4 @@
-import c from "../pages/TestingPage.module.css";
+import cssClass from "./NavButton.module.css";
 
 function NavButton(props) {
   function handleClick() {
@@ -11,12 +11,12 @@ function NavButton(props) {
   }
 
   return (
-    <div className={c.sti_container}>
-      <button className={c.btn} onClick={handleClick}>
-        <span className={c["btn-icon"]}>
+    <div className={cssClass.sti_container}>
+      <button className={cssClass.btn} onClick={handleClick}>
+        <span className={cssClass["btn-icon"]}>
           <i>{props.icon}</i>
         </span>
-        <span className={c["btn-text"]}>&nbsp;{props.text}</span>
+        <span className={cssClass["btn-text"]}>&nbsp;{props.text}</span>
       </button>
     </div>
   );

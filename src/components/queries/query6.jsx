@@ -1,6 +1,16 @@
-import PrismCode from "../PrismCode.jsx";
+import HighlightJS from "../HighlightJS.jsx";
 
-import { Table, Thead, Tbody, Tr, Th, Td, Box, Card } from "@chakra-ui/react";
+import {
+  Table,
+  Thead,
+  Tbody,
+  Tr,
+  Th,
+  Td,
+  Box,
+  Card,
+  Text,
+} from "@chakra-ui/react";
 
 const sqlCode = `SELECT
   tags.tag_name,
@@ -22,12 +32,13 @@ const data = [
 
 function Query() {
   return (
-    <Box>
-      - Find the top five most common hashtags. An example application of this
+    <Box pb="5px">
+      <Text fontSize="2xl">Query 6</Text>
+      Find the top five most common hashtags. An example application of this
       information is to use these tags in order to increase the chances of your
       picture to trend through the explore page. However, this data did include
       ties so the top 5 can be extended to top 8.
-      <PrismCode code={sqlCode} lang="sql" />
+      <HighlightJS code={sqlCode} lang="sql" />
       <Card p="5px" m="5px" boxShadow="md" rounded="md">
         <Table variant="simple" size="sm" algin="center">
           <Thead>

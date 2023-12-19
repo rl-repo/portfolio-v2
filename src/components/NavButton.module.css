@@ -1,0 +1,43 @@
+.sti_container {
+  position: relative;
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  padding: 5px 10px 5px 10px;
+  background-color: white;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  color: #5581ad;
+  border-radius: 25px;
+  /* -webkit-transition: width 0.5s; */
+  /* transition: width 10s; */
+}
+
+/* transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay]; */
+
+.btn .btn-text {
+  max-width: 0;
+  display: inline-block;
+  /* -webkit-transition: color 0.1s 0.5s, max-width 2.5s; */
+  /* transition: color 0.1s 0.5s, max-width 1s; */
+  transition: max-width 1s;
+  /* first val: total anim time*/
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  /* color: blue; */
+}
+
+.btn:hover .btn-text {
+  max-width: 300px;
+  color: #5581ad;
+}
+
+/* --- */
+
+/* https://codepen.io/lucasfads/pen/QWwjGjv */

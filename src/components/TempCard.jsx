@@ -24,6 +24,7 @@ function TempCard(props) {
       <Card
         maxW="sm"
         variant="outline"
+        transition="transform 0.2s"
         _hover={{
           shadow: "md",
           // transform: "translateY(-5px)",
@@ -33,6 +34,8 @@ function TempCard(props) {
           // transitionTimingFunction: "ease-in-out",
           // borderColor: "#0070f3",
           // backgroundColor: "rgb(36, 36, 36, 0.8)",
+          transform: "scale(1.02)",
+          transitionTimingFunction: "ease-in-out",
           boxShadow: "0 0 10px #a8d4f7",
           borderColor: "#a8d4f7",
         }}

@@ -14,6 +14,7 @@ import ErrorPage from "./pages/Error";
 // import TestingPage from "./pages/TestingPage";
 import WebDevPage from "./pages/WebDevPage.jsx";
 import SQLPage from "./pages/SQLPage.jsx";
+import ResumePage from "./pages/Resume.jsx";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,7 @@ const router = createBrowserRouter([
       { path: "projects", element: <ProjectsPage /> },
       { path: "web-development", element: <WebDevPage /> },
       { path: "sql", element: <SQLPage /> },
+      { path: "resume", element: <ResumePage /> },
     ],
   },
 ]);
