@@ -13,10 +13,13 @@ import { extendTheme } from "@chakra-ui/react";
 // const theme = extendTheme({ config });
 
 const theme = extendTheme({
+  colors: { tealBG: "rgb(111, 175, 227, 0.35)", tealLink: "#62cdbb" },
+
   styles: {
     global: () => ({
       body: {
         bg: "",
+        color: "white",
       },
     }),
   },

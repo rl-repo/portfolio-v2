@@ -28,7 +28,7 @@ function ClassesModal() {
       </Text>
       <Modal isOpen={isOpen} onClose={onClose} size="lg">
         <ModalOverlay />
-        <ModalContent>
+        <ModalContent color="black">
           <ModalHeader>Course List</ModalHeader>
           <ModalCloseButton />
           <ModalBody>

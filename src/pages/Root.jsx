@@ -1,6 +1,6 @@
 import { Outlet, NavLink, useLocation } from "react-router-dom";
 
-import Nav from "../components/Nav";
+// import Nav from "../components/Nav";
 import classes from "./Root.module.css";
 
 import { Flex, Box, Text, Image, Link, Button } from "@chakra-ui/react";

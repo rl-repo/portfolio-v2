@@ -3,10 +3,8 @@ import {
   ModalOverlay,
   ModalContent,
   ModalHeader,
-  ModalFooter,
   ModalBody,
   ModalCloseButton,
-  Button,
   useDisclosure,
   Image,
   Flex,
@@ -16,7 +14,6 @@ function DashModal({ modalHeader, modalBody, modalImage }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
-      {/* <Button onClick={onOpen}>Open Modal</Button> */}
       <Image
         src={modalImage}
         alt={modalHeader}
@@ -39,7 +36,7 @@ function DashModal({ modalHeader, modalBody, modalImage }) {
         <ModalOverlay />
         <ModalContent>
           <ModalHeader>{modalHeader}</ModalHeader>
-          <ModalCloseButton />
+          <ModalCloseButton color="black" />
           <ModalBody height="100%">
             <Flex border="1px" justifyContent="center">
               {modalBody}

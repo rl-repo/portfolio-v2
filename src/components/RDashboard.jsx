@@ -42,7 +42,7 @@ function RDashboards() {
       </Link>
 
       <Flex>
-        <Text as="u">
+        <Text as="u" fontWeight="bold">
           <Link to="http://richpluu.shinyapps.io/Iris_Classification" mr="10px">
             Iris Classification Dashboard
           </Link>
@@ -64,24 +64,12 @@ function RDashboards() {
         species
       </Text>
       <Divider />
-      {/*
-      <Image
-        src="src/assets/img/dashboards/balance_v_default.png"
-        alt="R Graph 1"
-        borderRadius="1%"
-        m="5px"
-        height="200px"
-        width="200px"
-      />
-
-      <Text>R Graph 1</Text>
-      <Text>
-        Logistic regression plot of the probability of an account defaulting.
-      </Text>
-
-      <Divider /> */}
 
       <Box p="20px">
+        <Text>
+          A small collection of visualizations created in R with ggplot2 and
+          various other packages.
+        </Text>
         <Carousel />
       </Box>
     </Box>
