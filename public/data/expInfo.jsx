@@ -1,5 +1,5 @@
 import { Link, Text } from "@chakra-ui/react";
-import ImageHover from "../../src/components/ImageHover";
+import ImageHover from "src/components/util/ImageHover.jsx";
 
 export const expInfo = [
   {
@@ -41,13 +41,6 @@ export const expInfo = [
       "Reported on probit regression, classification, and regression trees to explain and employ concept to peers",
       "Wrote logic and database knowledge for Java projects: towers of hanoi, and a GUI based music database",
     ],
-    img: (
-      <ImageHover
-        link="https://richpluu.github.io/VA_SDOH/index.html"
-        width="30em"
-        src="src/assets/img/SDOH.png"
-        alt="SDOH Homepage"
-      />
-    ),
+    img: "",
   },
 ];

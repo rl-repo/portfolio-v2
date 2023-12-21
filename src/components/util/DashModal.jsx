@@ -19,19 +19,18 @@ function DashModal({ modalHeader, modalBody, modalImage }) {
         alt={modalHeader}
         onClick={onOpen}
         borderRadius="1%"
-        m="5px"
+        mt="10px"
+        mb="10px"
         transition="transform 0.5s"
         _hover={{
           cursor: "pointer",
-          // transform: "translateY(-1px)",
           transform: "scale(1.02)",
-          // translateY: "-1px",
-          // transitionDuration: "2s",
           transitionTimingFunction: "ease-in-out",
           boxShadow: "0 0 10px #a8d4f7",
           borderColor: "#a8d4f7",
         }}
       />
+
       <Modal isOpen={isOpen} size={"full"} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>

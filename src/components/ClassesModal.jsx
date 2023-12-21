@@ -19,7 +19,7 @@ import {
 
 import classes from "./TempNav.module.css";
 
-import { courses } from "../../content/data/courses";
+import { courses } from "../../public/data/courses";
 
 const modalTabs = courses.map((item, i) => <Tab key={i}>{item.major}</Tab>);
 

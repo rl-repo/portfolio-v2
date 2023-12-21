@@ -4,6 +4,8 @@ function ImageHover(props) {
   return (
     <Link href={props.link}>
       <Image
+        mt="10px"
+        mb="10px"
         width={props.width}
         src={props.src}
         alt={props.alt}

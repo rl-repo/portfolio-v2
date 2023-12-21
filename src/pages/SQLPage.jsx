@@ -34,20 +34,13 @@ function ProjectsPage() {
 
   return (
     <div>
-      <Box bg="rgb(111, 175, 227, 0.35)" rounded="md" w="100%" p={4} m={2}>
-        <Heading as="h2" size="3xl" noOfLines={1}>
+      <Box bg="tealBG" rounded="md" w="100%" p={4} m={2}>
+        <Heading as="h2" size="3xl">
           SQL Samples
         </Heading>
       </Box>
-      <Box
-        bg="rgb(111, 175, 227, 0.35)"
-        rounded="md"
-        w="100%"
-        p={4}
-        color="white"
-        m={2}
-      >
-        <Heading as="h2" size="xl" noOfLines={1}>
+      <Box bg="tealBG" rounded="md" w="100%" p={4} m={2}>
+        <Heading as="h2" size="xl">
           Simple Instagram Clone Database Queries
         </Heading>
         <Box>
@@ -58,7 +51,7 @@ function ProjectsPage() {
               borderRadius="1%"
               boxShadow="2xl"
             />
-            <Flex gap="5px" align={"center"}>
+            <Flex gap="5px" align="center">
               <Text>Database Schema</Text>
               <Text
                 onClick={onDownload}
@@ -66,7 +59,6 @@ function ProjectsPage() {
                 _hover={{
                   transform: "translateY(-5px)",
                   transitionTimingFunction: "ease-in-out",
-
                   color: "#62cdbb",
                 }}
               >

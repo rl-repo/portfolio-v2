@@ -1,4 +1,4 @@
-import HighlightJS from "../HighlightJS.jsx";
+import HighlightJS from "../util/HighlightJS.jsx";
 
 import {
   Table,

@@ -5,7 +5,7 @@ import Slider from "react-slick";
 
 import { Image, Flex, Text, Link } from "@chakra-ui/react";
 
-import { carouselImg } from "../../content/data/carouselImg";
+import { carouselImg } from "../../public/data/carouselImg.jsx";
 
 export default function SimpleSlider() {
   var settings = {
@@ -46,7 +46,7 @@ export default function SimpleSlider() {
           flexDirection="column"
         >
           <Image
-            src="src/assets/img/dashboards/DR_Classification.png"
+            src="public/img/r_dash/graph4.png"
             alt="Classification Graph"
             borderRadius="1%"
             height="10%"

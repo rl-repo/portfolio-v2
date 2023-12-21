@@ -1,7 +1,7 @@
 import { Text, Flex, Box } from "@chakra-ui/react";
 import ClassesModal from "./ClassesModal.jsx";
 
-import { eduInfo } from "../../content/data/eduInfo.js";
+import { eduInfo } from "../../public/data/eduInfo.jsx";
 
 function Education() {
   return (

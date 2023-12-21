@@ -41,22 +41,9 @@ function TempCard(props) {
         }}
         overflow="hidden"
         position="relative"
-        // bgColor="rgb(111, 175, 227, 0.35)"
         bgColor="rgb(36, 36, 36, 0.35)"
         color="white"
       >
-        {/* <Image
-          src="https://bit.ly/dan-abramov"
-          opacity="0.1"
-          position="absolute"
-          left="0"
-          top="0"
-          width="100%"
-          height="auto"
-          background-size="contain"
-          background-repeat="no-repeat"
-          _hover={{ opacity: "1.0" }}
-        /> */}
         <CardHeader>
           <Flex justifyContent="space-between">
             <Link as={NavLink} to={props.link}>

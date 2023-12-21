@@ -7,9 +7,11 @@ import {
   Link,
 } from "@chakra-ui/react";
 
-import { expInfo } from "../../content/data/expInfo.jsx";
+// import { expInfo } from "../../public/data/expInfo.jsx";
 
-const tempMap = expInfo.map((row, i) => (
+import { expInfo } from "../assets/data/expInfo.jsx";
+
+const mappedExperience = expInfo.map((row, i) => (
   <Box key={i}>
     <Flex justifyContent="space-between">
       <Box>
@@ -37,7 +39,7 @@ function Experience() {
       <Text as="b" fontSize="2xl">
         Experience
       </Text>
-      {tempMap}
+      {mappedExperience}
     </div>
   );
 }

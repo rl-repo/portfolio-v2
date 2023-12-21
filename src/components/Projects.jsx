@@ -1,4 +1,4 @@
-import { Text, Box, Divider, Flex, Link } from "@chakra-ui/react";
+import { Text, Box, Divider, Flex, Link, Spacer } from "@chakra-ui/react";
 
 import TempCard from "./TempCard.jsx";
 
@@ -18,7 +18,7 @@ function Projects() {
           bgImage2="url('src/assets/img/Simpsons.png')"
           skillTags={["R", "ggplot2", "Tableau"]}
         />
-
+        <Spacer />
         <TempCard
           title="Dashboards and Visualizations"
           body=" A collection of various dashboards and visualizations I have created."
@@ -34,6 +34,8 @@ function Projects() {
           link="/web-development"
           skillTags={["HTML", "CSS", "JavaScript", "React"]}
         />
+        <Spacer />
+
         <TempCard
           link="/sql"
           title="SQL Sample(s)"

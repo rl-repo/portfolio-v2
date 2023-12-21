@@ -4,7 +4,7 @@ import { Outlet, NavLink, useLocation } from "react-router-dom";
 import classes from "./Root.module.css";
 
 import { Flex, Box, Text, Image, Link, Button } from "@chakra-ui/react";
-import NavButton from "../components/NavButton";
+import NavButton from "../components/util/NavButton";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
