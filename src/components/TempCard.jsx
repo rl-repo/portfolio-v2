@@ -16,12 +16,11 @@ import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 
 import { NavLink } from "react-router-dom";
 
-import { MdSettings } from "react-icons/md";
-
 function TempCard(props) {
   return (
     <>
       <Card
+        flexShrink={1}
         maxW="sm"
         variant="outline"
         transition="transform 0.2s"
@@ -42,6 +41,7 @@ function TempCard(props) {
         overflow="hidden"
         position="relative"
         bgColor="rgb(36, 36, 36, 0.35)"
+        h={{ base: "100%", xl: "300px" }}
         color="white"
       >
         <CardHeader>
@@ -67,7 +67,7 @@ function TempCard(props) {
         </CardBody>
 
         <CardFooter>
-          <HStack spacing={1}>
+          <HStack spacing={1} flexWrap="wrap">
             {props.skillTags.map((i) => (
               <Tag
                 color="white"

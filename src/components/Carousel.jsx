@@ -27,8 +27,8 @@ export default function SimpleSlider() {
   };
   return (
     <Slider {...settings}>
-      {carouselImg.map((img) => (
-        <div>
+      {carouselImg.map((img, i) => (
+        <div key={i}>
           <Flex
             justifyContent="space-around"
             alignItems="center"

@@ -2,46 +2,28 @@ import { Text, Box, Divider, Flex, Link, Spacer } from "@chakra-ui/react";
 
 import TempCard from "./TempCard.jsx";
 
+import { projectsCards } from "../../public/data/projectsCards.jsx";
+
 function Projects() {
   return (
     <Flex justifyContent="space-between" direction="column" gap="5px">
       <Text as="b" fontSize="2xl">
         Projects
       </Text>
-      <Flex justifyContent="space-around">
-        <TempCard
-          title="Simpsons Episode Analysis"
-          body="An analysis conducted on Simpsons episodes data obtained from Kaggle
-          done in R. Highlighting exploratory data analysis, data cleaning, time
-          series study, and soon a Tableau dashboard."
-          link="https://rl-repo.github.io/Simpsons-Episodes/"
-          bgImage2="url('src/assets/img/Simpsons.png')"
-          skillTags={["R", "ggplot2", "Tableau"]}
-        />
-        <Spacer />
-        <TempCard
-          title="Dashboards and Visualizations"
-          body=" A collection of various dashboards and visualizations I have created."
-          link="/projects"
-          skillTags={["R", "R-Shiny", "Tableau"]}
-        />
-      </Flex>
-
-      <Flex justifyContent="space-around">
-        <TempCard
-          title="Web Development"
-          body=" Various web sites and applications I have created. Including: Simple banking application, workout tracker, and recipe viewer."
-          link="/web-development"
-          skillTags={["HTML", "CSS", "JavaScript", "React"]}
-        />
-        <Spacer />
-
-        <TempCard
-          link="/sql"
-          title="SQL Sample(s)"
-          body="Example queries done on an Instagram-like data set."
-          skillTags={["SQL", "MySQL"]}
-        />
+      <Flex
+        align="center"
+        gap="10px"
+        justifyContent="space-around"
+        flexWrap="wrap"
+      >
+        {projectsCards.map((row) => (
+          <TempCard
+            title={row.title}
+            body={row.body}
+            link={row.link}
+            skillTags={row.skillTags}
+          />
+        ))}
       </Flex>
     </Flex>
   );

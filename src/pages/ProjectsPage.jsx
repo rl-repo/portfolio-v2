@@ -6,6 +6,7 @@ import {
   Divider,
   Image,
   Link,
+  Wrap,
 } from "@chakra-ui/react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -19,14 +20,18 @@ import TableauDash from "../components/TableauDash.jsx";
 function ProjectsPage() {
   return (
     <div>
-      <Box bg="rgb(111, 175, 227, 0.35)" rounded="md" w="100%" p={4} m={2}>
-        <Heading as="h2" size="3xl" noOfLines={1}>
+      <Box bg="tealBG" w="100%" rounded="md" p={4} m={2}>
+        <Heading fontSize={{ base: "30px", md: "40px", lg: "56px" }}>
           Dashboards & Visualizations
         </Heading>
+        {/* <Heading size={{ base: "3xl" }} overflow-wrap="break-word">
+          Dashboards & Visualizations
+        </Heading> */}
       </Box>
 
+      {/* 
       <TableauDash />
-      <RDashboards />
+      <RDashboards /> */}
 
       <ScrollRestoration />
     </div>

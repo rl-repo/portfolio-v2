@@ -1,4 +1,4 @@
-import { Box, Heading, Text, Divider } from "@chakra-ui/react";
+import { Box, Heading, Text, Divider, Flex } from "@chakra-ui/react";
 import { tableauDashes } from "../../public/data/tableauDashes.jsx";
 
 import DashModal from "./util/DashModal.jsx";
@@ -10,8 +10,8 @@ function TableauDash() {
         Tableau
       </Heading>
       <Divider />
-      {tableauDashes.map((dash) => (
-        <>
+      {tableauDashes.map((dash, i) => (
+        <Flex flexDirection="column" key={i}>
           <DashModal
             modalImage={dash.modal.img}
             modalHeader={dash.title}
@@ -24,7 +24,7 @@ function TableauDash() {
           <Text mb="5px">{dash.caption}</Text>
 
           <Divider />
-        </>
+        </Flex>
       ))}
     </Box>
   );

@@ -35,7 +35,7 @@ function ProjectsPage() {
   return (
     <div>
       <Box bg="tealBG" rounded="md" w="100%" p={4} m={2}>
-        <Heading as="h2" size="3xl">
+        <Heading fontSize={{ base: "30px", md: "40px", lg: "56px" }}>
           SQL Samples
         </Heading>
       </Box>

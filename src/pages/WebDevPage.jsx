@@ -2,7 +2,7 @@ import { Box, Heading, Text, Divider } from "@chakra-ui/react";
 
 import { ScrollRestoration } from "react-router-dom";
 
-import WebDevLink from "../components/WebDevLink";
+import WebDevLink from "../components/util/WebDevLink";
 import { webDevInfo } from "../../public/data/webdevInfo.jsx";
 
 function WebDevPage() {

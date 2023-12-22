@@ -1,4 +1,3 @@
-import { Link, Text } from "@chakra-ui/react";
 import ImageHover from "../../src/components/util/ImageHover";
 
 export const webDevInfo = [
