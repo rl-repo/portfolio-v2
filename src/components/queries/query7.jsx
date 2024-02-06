@@ -10,6 +10,8 @@ import {
   Box,
   Card,
   Text,
+  Image,
+  Flex,
 } from "@chakra-ui/react";
 
 const sqlCode1 = `SELECT * 
@@ -69,59 +71,91 @@ const data2 = [
 
 function Query7() {
   return (
-    <Box>
+    <Flex pb="5px" direction="column" alignItems="center">
       <Text fontSize="2xl">Query 7</Text>
-      <Text>
+      <Text align="center">
         Since social media is riddled with bots, this query finds which users
         are bots that likes all user posts. There are two approaches shown
         below:
       </Text>
-      <Text>
-        1. Creating a new flag where total amount of likes is equal to the total
+      <Text align="center">
+        Creating a new flag where total amount of likes is equal to the total
         amonut of pictures - assumed bots like ALL pictures
       </Text>
-      <Text>2 Comparing likes without creating a new flag/column</Text>
-      <HighlightJS code={sqlCode1} lang="sql" />
-      <Card p="5px" m="5px" boxShadow="md" rounded="md">
-        <Table variant="simple" size="sm" algin="center">
-          <Thead>
-            <Tr>
-              <Th>user_id</Th>
-              <Th>username</Th>
-              <Th>bot_status</Th>
-            </Tr>
-          </Thead>
-          <Tbody>
-            {data1.map((row) => (
-              <Tr key={row.id}>
-                <Td>{row.id}</Td>
-                <Td>{row.name}</Td>
-                <Td>1</Td>
-              </Tr>
-            ))}
-          </Tbody>
-        </Table>
-      </Card>
-      <HighlightJS code={sqlCode2} lang="sql" />
-      <Card p="5px" m="5px" boxShadow="md" rounded="md">
-        <Table variant="simple" size="sm" algin="center">
-          <Thead>
-            <Tr>
-              <Th>username</Th>
-              <Th>num_likes</Th>
-            </Tr>
-          </Thead>
-          <Tbody>
-            {data2.map((row) => (
-              <Tr key={row}>
-                <Td>{row}</Td>
-                <Td>257</Td>
-              </Tr>
-            ))}
-          </Tbody>
-        </Table>
-      </Card>
-    </Box>
+      <Image
+        mt="10px"
+        mb="10px"
+        width={{ lg: "80%", sm: "100%" }}
+        src="public/img/queries/query7.png"
+        alt="Query 7"
+        borderRadius="1%"
+      />
+
+      <Text align="center">
+        Comparing likes without creating a new flag/column
+      </Text>
+      <Image
+        mt="10px"
+        mb="10px"
+        width={{ lg: "80%", sm: "100%" }}
+        src="public/img/queries/query7b.png"
+        alt="Query 7b"
+        borderRadius="1%"
+      />
+    </Flex>
+    // <Box>
+    //   <Text fontSize="2xl">Query 7</Text>
+    //   <Text>
+    // Since social media is riddled with bots, this query finds which users
+    // are bots that likes all user posts. There are two approaches shown
+    // below:
+    //   </Text>
+    //   <Text>
+    //   1. Creating a new flag where total amount of likes is equal to the total
+    //   amonut of pictures - assumed bots like ALL pictures
+    // </Text>
+    //   <Text>2. Comparing likes without creating a new flag/column</Text>
+    //   <HighlightJS code={sqlCode1} lang="sql" />
+    //   <Card p="5px" m="5px" boxShadow="md" rounded="md">
+    //     <Table variant="simple" size="sm" algin="center">
+    //       <Thead>
+    //         <Tr>
+    //           <Th>user_id</Th>
+    //           <Th>username</Th>
+    //           <Th>bot_status</Th>
+    //         </Tr>
+    //       </Thead>
+    //       <Tbody>
+    //         {data1.map((row) => (
+    //           <Tr key={row.id}>
+    //             <Td>{row.id}</Td>
+    //             <Td>{row.name}</Td>
+    //             <Td>1</Td>
+    //           </Tr>
+    //         ))}
+    //       </Tbody>
+    //     </Table>
+    //   </Card>
+    //   <HighlightJS code={sqlCode2} lang="sql" />
+    //   <Card p="5px" m="5px" boxShadow="md" rounded="md">
+    //     <Table variant="simple" size="sm" algin="center">
+    //       <Thead>
+    //         <Tr>
+    //           <Th>username</Th>
+    //           <Th>num_likes</Th>
+    //         </Tr>
+    //       </Thead>
+    //       <Tbody>
+    //         {data2.map((row) => (
+    //           <Tr key={row}>
+    //             <Td>{row}</Td>
+    //             <Td>257</Td>
+    //           </Tr>
+    //         ))}
+    //       </Tbody>
+    //     </Table>
+    //   </Card>
+    // </Box>
   );
 }
 

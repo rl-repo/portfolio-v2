@@ -21,7 +21,8 @@ function ProjectsPage() {
   return (
     <div>
       <Box bg="tealBG" w="100%" rounded="md" p={4} m={2}>
-        <Heading fontSize={{ base: "30px", md: "40px", lg: "56px" }}>
+        <Heading fontSize={{ base: "25px", md: "50px", lg: "60px" }}>
+          {/* <Heading fontSize="60px"> */}
           Dashboards & Visualizations
         </Heading>
         {/* <Heading size={{ base: "3xl" }} overflow-wrap="break-word">
@@ -29,9 +30,8 @@ function ProjectsPage() {
         </Heading> */}
       </Box>
 
-      {/* 
       <TableauDash />
-      <RDashboards /> */}
+      <RDashboards />
 
       <ScrollRestoration />
     </div>

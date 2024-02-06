@@ -13,6 +13,9 @@ import {
   Text,
   Card,
   Center,
+  Code,
+  Flex,
+  Image,
 } from "@chakra-ui/react";
 
 const sqlCode1 = `SELECT 
@@ -35,15 +38,27 @@ const data = [
 
 export default function Query1() {
   return (
-    <Box pb="5px">
+    <Flex pb="5px" direction="column" alignItems="center">
       <Text fontSize="2xl">Query 1</Text>
-      Getting five oldest users.
-      <HighlightJS code={sqlCode1} lang="sql" />
+      <Text>Getting five oldest users.</Text>
+      <Image
+        mt="10px"
+        mb="10px"
+        width={{ lg: "50%", sm: "100%" }}
+        src="public/img/queries/query1.png"
+        alt="Query 1"
+        borderRadius="1%"
+      />
+      {/* <Card p="5px" m="5px" boxShadow="md" maxW="60%" rounded="md"></Card> */}
+      {/* <Code>{sqlCode1}</Code> */}
+
+      {/* <HighlightJS code={sqlCode1} lang="sql" /> */}
       {/* <Box align="center">
         <Markdown remarkPlugins={[remarkGfm]}>{mdTable}</Markdown>
       </Box> */}
+      {/*       
       <Card p="5px" m="5px" boxShadow="md" rounded="md">
-        <Table variant="simple" size="sm" algin="center">
+        <Table variant="simple" size="sm" algin="center" p="5px">
           <Thead>
             <Tr>
               <Th>username</Th>
@@ -52,17 +67,22 @@ export default function Query1() {
             </Tr>
           </Thead>
           <Tbody>
+            <Tr key="1">
+              <Td>asd</Td>
+              <Td>asd2</Td>
+              <Td>3 days old</Td>
+            </Tr>
             {data.map((user) => (
               <Tr key={user.username}>
                 <Td>{user.username}</Td>
                 <Td>{user.created}</Td>
                 <Td>{user.age} days old</Td>
               </Tr>
-            ))}
+            ))} 
           </Tbody>
         </Table>
-      </Card>
-    </Box>
+      </Card> */}
+    </Flex>
   );
 }
 

@@ -6,7 +6,8 @@ import DashModal from "./util/DashModal.jsx";
 function TableauDash() {
   return (
     <Box bg="tealBG" rounded="md" w="100%" p={4} m={2}>
-      <Heading as="h2" size="xl">
+      {/* <Heading as="h2" size="xl"> */}
+      <Heading fontSize={{ base: "20px", md: "40px", lg: "56px" }}>
         Tableau
       </Heading>
       <Divider />

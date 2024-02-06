@@ -9,6 +9,8 @@ import {
   Box,
   Card,
   Text,
+  Flex,
+  Image,
 } from "@chakra-ui/react";
 
 const sqlCode = `SELECT 
@@ -30,30 +32,45 @@ const data = [
 
 function Query2() {
   return (
-    <Box pb="5px">
+    <Flex pb="5px" direction="column" alignItems="center">
       <Text fontSize="2xl">Query 2</Text>
-      Determining which day of the week is most popular. Can also extract day of
-      week in name with DAYNAME(created_at) instead.
-      <HighlightJS code={sqlCode} lang="sql" />
-      <Card p="5px" m="5px" boxShadow="md" rounded="md">
-        <Table variant="simple" size="sm" algin="center">
-          <Thead>
-            <Tr>
-              <Th>day_of_week</Th>
-              <Th>col2</Th>
-            </Tr>
-          </Thead>
-          <Tbody>
-            {data.map((row) => (
-              <Tr key={row.day}>
-                <Td>{row.day}</Td>
-                <Td>{row.total}</Td>
-              </Tr>
-            ))}
-          </Tbody>
-        </Table>
-      </Card>
-    </Box>
+      <Text align="center">
+        Determining which day of the week is most popular. Can also extract day
+        of week in name with DAYNAME(created_at)instead.
+      </Text>
+      <Image
+        mt="10px"
+        mb="10px"
+        width={{ lg: "50%", sm: "100%" }}
+        src="public/img/queries/query2.png"
+        alt="Query 2"
+        borderRadius="1%"
+      />
+    </Flex>
+    // <Box pb="5px">
+    //   <Text fontSize="2xl">Query 2</Text>
+    //   Determining which day of the week is most popular. Can also extract day of
+    //   week in name with DAYNAME(created_at) instead.
+    //   <HighlightJS code={sqlCode} lang="sql" />
+    //   <Card p="5px" m="5px" boxShadow="md" rounded="md">
+    //     <Table variant="simple" size="sm" algin="center">
+    //       <Thead>
+    //         <Tr>
+    //           <Th>day_of_week</Th>
+    //           <Th>col2</Th>
+    //         </Tr>
+    //       </Thead>
+    //       <Tbody>
+    //         {data.map((row) => (
+    //           <Tr key={row.day}>
+    //             <Td>{row.day}</Td>
+    //             <Td>{row.total}</Td>
+    //           </Tr>
+    //         ))}
+    //       </Tbody>
+    //     </Table>
+    //   </Card>
+    // </Box>
   );
 }
 

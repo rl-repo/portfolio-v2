@@ -13,7 +13,7 @@ import {
 function DashModal({ modalHeader, modalBody, modalImage }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
-    <Flex flexShrink={1}>
+    <Flex>
       <Image
         src={modalImage}
         alt={modalHeader}
@@ -22,7 +22,6 @@ function DashModal({ modalHeader, modalBody, modalImage }) {
         mt="10px"
         mb="10px"
         transition="transform 0.5s"
-        w="0.004%"
         _hover={{
           cursor: "pointer",
           transform: "scale(1.02)",

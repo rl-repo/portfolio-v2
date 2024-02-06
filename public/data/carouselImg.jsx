@@ -1,6 +1,6 @@
 export const carouselImg = [
   {
-    src: "public/img/r_dash/graph1.png",
+    src: "public/img/r_dash/testGraph.png",
     alt: "Balance vs Default graph",
     text: "Graph 1: Logistic regression plot of the probability of an account defaulting.",
   },
@@ -16,8 +16,8 @@ export const carouselImg = [
   },
 
   {
-    src: "public/img/r_dash/graph5.png",
-    alt: "Florida Poverty",
-    text: "Graph 4: US census poverty percentage estimates by county for 2014 for the South Atlantic Region. (usmaps package)",
+    src: "public/img/r_dash/graph6.png",
+    alt: "Mid Atlantic Poverty",
+    text: "Graph 4: US census poverty percentage estimates by county for 2014 for the Mid Atlantic Region. (usmaps package)",
   },
 ];

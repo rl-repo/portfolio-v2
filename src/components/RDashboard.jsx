@@ -10,15 +10,15 @@ import ImageHover from "./util/ImageHover.jsx";
 function RDashboards() {
   return (
     <Box bg="tealBG" rounded="md" w="100%" p={4} m={2}>
-      <Heading as="h2" size="xl" noOfLines={1}>
+      <Heading as="h2" size="xl">
         R / R Studio
       </Heading>
 
       <Divider />
 
-      <Box p="20px" pt="10px">
-        <Carousel margin />{" "}
-      </Box>
+      <Flex p="20px" pt="10px" justifyContent="center">
+        <Carousel />
+      </Flex>
       <Text mt="5px" mb="5px">
         A small collection of visualizations created in R with ggplot2 and
         various other packages.

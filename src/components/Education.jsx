@@ -9,7 +9,7 @@ function Education() {
       <Text as="b" fontSize="2xl">
         {eduInfo.title}
       </Text>
-      <Flex justifyContent="space-between">
+      <Flex justifyContent="space-between" gap="5px">
         <Box>
           <ClassesModal />
           <Text>{eduInfo.major}</Text>

@@ -4,11 +4,11 @@ function Skills() {
   return (
     <div>
       <Text as="b" fontSize="2xl">
-        Skills
+        Skills & Software
       </Text>
       <Flex gap="10px" justifyContent="space-around">
         <ul>
-          <li>HTML + CSS</li>
+          <li>HTML/CSS</li>
           <li>Python</li>
           <li>R/R Studio</li>
           <li>Java</li>

@@ -9,6 +9,8 @@ import {
   Box,
   Card,
   Text,
+  Image,
+  Flex,
 } from "@chakra-ui/react";
 
 const sqlCode = `SELECT
@@ -34,31 +36,43 @@ const data = [
 
 function Query4() {
   return (
-    <Box pb="5px">
+    <Flex pb="5px" direction="column" alignItems="center">
       <Text fontSize="2xl">Query 4</Text>
-      Pictures/posts with the most likes.
-      <HighlightJS code={sqlCode} lang="sql" />
-      <Card p="5px" m="5px" boxShadow="md" rounded="md">
-        <Table variant="simple" size="sm" algin="center">
-          <Thead>
-            <Tr>
-              <Th>image_url</Th>
-              <Th>username</Th>
-              <Th>total_likes</Th>
-            </Tr>
-          </Thead>
-          <Tbody>
-            {data.map((row) => (
-              <Tr key={row.username}>
-                <Td>{row.url}</Td>
-                <Td>{row.username}</Td>
-                <Td>{row.likes}</Td>
-              </Tr>
-            ))}
-          </Tbody>
-        </Table>
-      </Card>
-    </Box>
+      <Text align="center">Pictures/posts with the most likes.</Text>
+      <Image
+        mt="10px"
+        mb="10px"
+        width={{ lg: "50%", sm: "100%" }}
+        src="public/img/queries/query4.png"
+        alt="Query 4"
+        borderRadius="1%"
+      />
+    </Flex>
+    // <Box pb="5px">
+    //   <Text fontSize="2xl">Query 4</Text>
+    //   Pictures/posts with the most likes.
+    //   <HighlightJS code={sqlCode} lang="sql" />
+    //   <Card p="5px" m="5px" boxShadow="md" rounded="md">
+    //     <Table variant="simple" size="sm" algin="center">
+    //       <Thead>
+    //         <Tr>
+    //           <Th>image_url</Th>
+    //           <Th>username</Th>
+    //           <Th>total_likes</Th>
+    //         </Tr>
+    //       </Thead>
+    //       <Tbody>
+    //         {data.map((row) => (
+    //           <Tr key={row.username}>
+    //             <Td>{row.url}</Td>
+    //             <Td>{row.username}</Td>
+    //             <Td>{row.likes}</Td>
+    //           </Tr>
+    //         ))}
+    //       </Tbody>
+    //     </Table>
+    //   </Card>
+    // </Box>
   );
 }
 

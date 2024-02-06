@@ -37,6 +37,19 @@ function About() {
         I am currently looking for employment that will allow me to apply and
         develop my skills.{" "}
       </Text>
+      <Text>
+        Feel free to{" "}
+        <Tooltip label="Opens native email client" placement="top">
+          <button
+            onClick={() => (window.location = "mailto:r.luu.jobs@gmail.com")}
+          >
+            <Text color="tealLink" as="u">
+              contact me
+            </Text>
+          </button>
+        </Tooltip>
+        !
+      </Text>
     </Flex>
   );
 }

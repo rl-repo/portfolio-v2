@@ -7,6 +7,14 @@ import {
   Link,
   Flex,
   Button,
+  Code,
+  Table,
+  Thead,
+  Tbody,
+  Tfoot,
+  Tr,
+  Th,
+  Td,
 } from "@chakra-ui/react";
 
 import { NavLink, ScrollRestoration } from "react-router-dom";
@@ -33,13 +41,74 @@ function ProjectsPage() {
   };
 
   return (
+    //819.2×72
     <div>
-      <Box bg="tealBG" rounded="md" w="100%" p={4} m={2}>
+      <Flex
+        bg="tealBG"
+        rounded="md"
+        // w={{ lg: "828.667px", md: "100px", base: "100%" }}
+        w="100%"
+        p={4}
+        m={2}
+      >
         <Heading fontSize={{ base: "30px", md: "40px", lg: "56px" }}>
           SQL Samples
         </Heading>
-      </Box>
+      </Flex>
+
       <Box bg="tealBG" rounded="md" w="100%" p={4} m={2}>
+        <Heading as="h2" size="xl">
+          Simple Instagram Clone Database Queries
+        </Heading>
+
+        <Flex flexDirection="column" m="5px" align="center">
+          <Image
+            src="src/assets/img/ig-db.png"
+            alt="SQL Database"
+            borderRadius="1%"
+            boxShadow="2xl"
+          />
+          <Flex gap="5px" align="center">
+            <Text>Database Schema</Text>
+            <Text
+              onClick={onDownload}
+              transition="transform 0.2s"
+              _hover={{
+                transform: "translateY(-5px)",
+                transitionTimingFunction: "ease-in-out",
+                color: "#62cdbb",
+              }}
+            >
+              <FaFileCode />
+            </Text>
+          </Flex>
+        </Flex>
+
+        <Text pb="5px">
+          The database pictured above is a very primitive example of what an
+          Instagram clone could potentially be. Showing basic data points to
+          showchase queries and table relationships. Created and obtained from a
+          Udemy course. Diagram created from{" "}
+          <Text as="u" color="tealLink">
+            <Link href="http://dbdiagram.io">dbdiagram.io</Link>
+          </Text>
+          .
+        </Text>
+        <Divider />
+
+        {/* Queries */}
+
+        <Query1 />
+        <Query2 />
+        <Query3 />
+        <Query4 />
+        <Query5 />
+        <Query6 />
+        <Query7 />
+      </Box>
+
+      {/* </Box>
+      <Box bg="tealBG" rounded="md" w="828.667px" p={4} m={2}>
         <Heading as="h2" size="xl">
           Simple Instagram Clone Database Queries
         </Heading>
@@ -81,6 +150,7 @@ function ProjectsPage() {
 
           <Query1 />
           <Divider />
+
           <Query2 />
           <Divider />
 
@@ -98,7 +168,7 @@ function ProjectsPage() {
 
           <Query7 />
         </Box>
-      </Box>
+      </Box> */}
       <ScrollRestoration />
     </div>
   );

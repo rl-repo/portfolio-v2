@@ -21,7 +21,7 @@ export const tableauDashes = [
       img: "src/assets/img/dashboards/vg_sales.png",
       src: "https://public.tableau.com/views/VGDash/VGDash?:language=en-US&:embed=y&:embed_code_version=3&:loadOrderID=0&:display_count=y&:origin=viz_share_link:showVizHome=no&:embed=true",
     },
-    title: "Dashboard 2",
+    title: "Dashboard 3",
     caption:
       "The third Tableau dashboard on Video Game sales data, with various filter functions.",
   },
