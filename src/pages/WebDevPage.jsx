@@ -34,7 +34,7 @@ function WebDevPage() {
       <Box bg="tealBG" rounded="md" w="100%" p={4} m={2} align="center">
         <Divider />
         {webDevInfo.map((row) => (
-          <Box>
+          <Box key={row.title}>
             <WebDevLink
               pic={row.pic}
               title={row.title}

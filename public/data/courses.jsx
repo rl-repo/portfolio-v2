@@ -6,7 +6,7 @@ export const courses = [
       "3605/3606 - Math Modeling: Methods & Tools",
       "3634 - Computer Science Foundations for CMDA",
       "3654 - Intro Data Analytics & Visualizations",
-      "4654 - Inetermediate Data Analyltics & Machine Learning",
+      "4654 - Inetermediate Data Analytics & Machine Learning",
       "4864 - CMDA Capstone",
     ],
   },

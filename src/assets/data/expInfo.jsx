@@ -34,7 +34,7 @@ export const expInfo = [
   {
     title: "Relevant Coursework",
     location: "Virginia Tech, Blacksburg, VA",
-    years: "2016 - 2020",
+    years: "Aug 2016 - Dec 2020",
     desc: [
       "Researched Ising model stimulation and used high performance computing in C / Linux to visualize results, all monitored through git version control with scalability study and parallel processing",
       "Conducted quantitative analysis of anime data and user demographics from MyAnimeList to predict popularity based off of various metrics with team using R",

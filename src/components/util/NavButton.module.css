@@ -18,8 +18,6 @@
   /* transition: width 10s; */
 }
 
-/* transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay]; */
-
 .btn .btn-text {
   max-width: 0;
   display: inline-block;
@@ -33,9 +31,11 @@
   /* color: blue; */
 }
 
-.btn:hover .btn-text {
-  max-width: 300px;
-  color: #5581ad;
+@media (min-width: 800px) {
+  .btn:hover .btn-text {
+    max-width: 300px;
+    color: #5581ad;
+  }
 }
 
 /* --- */

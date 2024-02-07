@@ -28,6 +28,9 @@ function ProjectsPage() {
         {/* <Heading size={{ base: "3xl" }} overflow-wrap="break-word">
           Dashboards & Visualizations
         </Heading> */}
+        <Text>
+          Please click on the dashboard thumbnails to open a modal / new page!
+        </Text>
       </Box>
 
       <TableauDash />

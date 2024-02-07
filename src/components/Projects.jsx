@@ -22,6 +22,7 @@ function Projects() {
             body={row.body}
             link={row.link}
             skillTags={row.skillTags}
+            key={row.title}
           />
         ))}
       </Flex>
