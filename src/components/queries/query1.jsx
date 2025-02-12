@@ -45,7 +45,7 @@ export default function Query1() {
         mt="10px"
         mb="10px"
         width={{ lg: "50%", sm: "100%" }}
-        src="public/img/queries/query1.png"
+        src="https://res.cloudinary.com/dwhkrpxcy/image/upload/v1739324537/Portfolio/fl9fx8n94ucnzrg58jut.png"
         alt="Query 1"
         borderRadius="1%"
       />

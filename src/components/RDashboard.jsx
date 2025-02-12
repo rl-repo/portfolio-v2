@@ -28,7 +28,7 @@ function RDashboards() {
 
       <ImageHover
         link="http://richpluu.shinyapps.io/Iris_Classification"
-        src="src/assets/img/dashboards/iris_shiny.png"
+        src="https://res.cloudinary.com/dwhkrpxcy/image/upload/v1739385539/iris_shiny_sfnh8p.png"
         alt="Iris Classification"
       />
 

@@ -1,5 +1,5 @@
 import { Outlet, NavLink, useLocation } from "react-router-dom";
-
+import { Cloudinary } from "@cloudinary/url-gen";
 import { Flex, Box, Link } from "@chakra-ui/react";
 import NavButton from "../components/util/NavButton";
 
@@ -70,8 +70,9 @@ function RootLayout() {
         // p="auto"
         borderRadius="15px"
         bgImage={{
-          lg: "url('src/assets/img/pfp_height.png')",
-          md: "url('src/assets/img/pfp_height.png')",
+          //lg: "url('src/assets/img/pfp_height.png')",
+          lg: "url('https://res.cloudinary.com/dwhkrpxcy/image/upload/v1739324559/Portfolio/pr3s5nku1edgwgt6lzb8.png')",
+          md: "url('https://res.cloudinary.com/dwhkrpxcy/image/upload/v1739324559/Portfolio/pr3s5nku1edgwgt6lzb8.png')",
           sm: "",
         }}
         backgroundPosition="top center"

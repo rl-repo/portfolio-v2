@@ -63,7 +63,7 @@ function ProjectsPage() {
 
         <Flex flexDirection="column" m="5px" align="center">
           <Image
-            src="src/assets/img/ig-db.png"
+            src="https://res.cloudinary.com/dwhkrpxcy/image/upload/v1739376638/ig-db_xzgstk.png"
             alt="SQL Database"
             borderRadius="1%"
             boxShadow="2xl"

@@ -2,7 +2,8 @@ import { Box, Heading } from "@chakra-ui/react";
 
 import { ScrollRestoration } from "react-router-dom";
 
-const resume = "src/assets/Luu_Richard_Resume_23_Q4.pdf";
+const resume =
+  "https://drive.google.com/file/d/1kmyL9wETLEtUjs8iEr6gyruJl24af90q/view";
 
 function ResumePage() {
   return (
@@ -13,12 +14,18 @@ function ResumePage() {
         </Heading>
       </Box>
       <Box bg="tealBG" rounded="md" w="100%" height="85vh" p={4} m={2}>
-        <object
+        {/* <object
           data={resume}
           type="application/pdf"
           width="100%"
           height="100%"
-        ></object>
+        ></object> */}
+        <iframe
+          src="https://drive.google.com/file/d/1kmyL9wETLEtUjs8iEr6gyruJl24af90q/preview"
+          width="100%"
+          height="100%"
+          allow="autoplay"
+        ></iframe>
       </Box>
       <ScrollRestoration />
     </div>

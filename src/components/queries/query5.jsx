@@ -30,7 +30,7 @@ function Query5() {
         mt="10px"
         mb="10px"
         width={{ lg: "80%", sm: "100%" }}
-        src="public/img/queries/query5.png"
+        src="https://res.cloudinary.com/dwhkrpxcy/image/upload/v1739324537/Portfolio/srakz9jl4jcwd4px25jo.png"
         alt="Query 5"
         borderRadius="1%"
       />

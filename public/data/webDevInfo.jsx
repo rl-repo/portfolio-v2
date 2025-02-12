@@ -17,7 +17,7 @@ export const webDevInfo = [
       <ImageHover
         link="https://rl-repo.github.io/bankist-page/"
         width="auto"
-        src="src/assets/img/WebDev/Bankist_App.png"
+        src="https://res.cloudinary.com/dwhkrpxcy/image/upload/v1739376648/Bankist_App_uvg2u8.png"
         alt="Bankist Homescreen"
       />
     ),
@@ -32,7 +32,7 @@ export const webDevInfo = [
       <ImageHover
         link="https://rl-repo.github.io/mapty/"
         width="auto"
-        src="src/assets/img/WebDev/Mapty.png"
+        src="https://res.cloudinary.com/dwhkrpxcy/image/upload/v1739376653/Mapty_nmmomf.png"
         alt="Mapty UI"
       />
     ),
@@ -47,7 +47,7 @@ export const webDevInfo = [
       <ImageHover
         link="https://forkify-rl-repo.netlify.app/"
         width="auto"
-        src="src/assets/img/WebDev/Forkify.png"
+        src="https://res.cloudinary.com/dwhkrpxcy/image/upload/v1739376649/Forkify_or58vz.png"
         alt="Forkify app"
       />
     ),

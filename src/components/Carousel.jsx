@@ -57,7 +57,7 @@ export default function SimpleSlider() {
         > */}
           <Flex alignItems="center" flexDirection="column">
             <Image
-              src="public/img/r_dash/graph5.png"
+              src="https://res.cloudinary.com/dwhkrpxcy/image/upload/v1739324548/Portfolio/bm402t5rvm1uwdl1gmwa.png"
               alt="Classification Graph"
               borderRadius="1%"
               // height="5%"

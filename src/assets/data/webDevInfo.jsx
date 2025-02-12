@@ -17,7 +17,7 @@ export const webDevInfo = [
       <ImageHover
         link="https://rl-repo.github.io/bankist-page/"
         width="auto"
-        src="src/assets/img/WebDev/Bankist_App.png"
+        src="https://res.cloudinary.com/dwhkrpxcy/image/upload/v1739376648/Bankist_App_uvg2u8.png"
         alt="Bankist Homescreen"
       />
     ),

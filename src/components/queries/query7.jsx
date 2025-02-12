@@ -86,7 +86,7 @@ function Query7() {
         mt="10px"
         mb="10px"
         width={{ lg: "80%", sm: "100%" }}
-        src="public/img/queries/query7.png"
+        src="https://res.cloudinary.com/dwhkrpxcy/image/upload/v1739324538/Portfolio/xmzehnaluoogqb0hxugw.png"
         alt="Query 7"
         borderRadius="1%"
       />
@@ -98,7 +98,7 @@ function Query7() {
         mt="10px"
         mb="10px"
         width={{ lg: "80%", sm: "100%" }}
-        src="public/img/queries/query7b.png"
+        src="https://res.cloudinary.com/dwhkrpxcy/image/upload/v1739324538/Portfolio/spgoxno7ciudvat6orfv.png"
         alt="Query 7b"
         borderRadius="1%"
       />

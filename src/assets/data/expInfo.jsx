@@ -26,7 +26,7 @@ export const expInfo = [
       <ImageHover
         link="https://richpluu.github.io/VA_SDOH/index.html"
         width="30em"
-        src="src/assets/img/SDOH.png"
+        src="https://res.cloudinary.com/dwhkrpxcy/image/upload/v1739376631/SDOH_rqmryl.png"
         alt="SDOH Homepage"
       />
     ),

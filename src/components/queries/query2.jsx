@@ -42,7 +42,7 @@ function Query2() {
         mt="10px"
         mb="10px"
         width={{ lg: "50%", sm: "100%" }}
-        src="public/img/queries/query2.png"
+        src="https://res.cloudinary.com/dwhkrpxcy/image/upload/v1739324537/Portfolio/crtzdbqs6jwrrpibayim.png"
         alt="Query 2"
         borderRadius="1%"
       />
