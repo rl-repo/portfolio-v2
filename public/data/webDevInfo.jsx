@@ -2,10 +2,18 @@ import ImageHover from "../../src/components/util/ImageHover";
 
 export const webDevInfo = [
   {
+    // pic: (
+    //   <video controls autoPlay loop muted width="50%" name="Bankist Website">
+    //     <source src="src/assets/img/WebDev/Bankist_Page.mov" type="video/mp4" />
+    //   </video>
+    // ),
     pic: (
-      <video controls autoPlay loop muted width="50%" name="Bankist Website">
-        <source src="src/assets/img/WebDev/Bankist_Page.mov" type="video/mp4" />
-      </video>
+      <ImageHover
+        link="https://rl-repo.github.io/bankist-page/"
+        width="auto"
+        src="https://res.cloudinary.com/dwhkrpxcy/image/upload/v1739393584/Bankist_Page_ivohxk.gif"
+        alt="Bankist Homescreen"
+      />
     ),
     title: "Bankist Webpage",
     appLink: "https://rl-repo.github.io/bankist-page/",

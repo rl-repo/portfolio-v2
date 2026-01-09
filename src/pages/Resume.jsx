@@ -21,7 +21,7 @@ function ResumePage() {
           height="100%"
         ></object> */}
         <iframe
-          src="https://drive.google.com/file/d/1kmyL9wETLEtUjs8iEr6gyruJl24af90q/preview"
+          src="https://drive.google.com/file/d/1C_wg0Tq0m2u1chLJqC7cp7vFMs2iO091/preview"
           width="100%"
           height="100%"
           allow="autoplay"
