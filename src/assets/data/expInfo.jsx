@@ -7,7 +7,7 @@ export const expInfo = [
     location: "Anthem Inc / Virginia Tech, Blacksburg, VA",
     years: "Aug 2020 - Dec 2020",
     desc: [
-      "A collaborative case study with the client's business intellgeince team and peers researching the relationship between social determinants of health and health risk",
+      "A collaborative case study with the client's business intelligence team and peers researching the relationship between social determinants of health and health risk",
       "Lead data analysis section of research on health levels across Virginia counties with regression analysis",
       "Organized meeting schedules and task delegation for team of peers",
       "Communicated with client in the form of weekly meetings discussing progress and technical report updates with visualizations of data in R",
